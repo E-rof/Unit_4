@@ -1,34 +1,15 @@
-﻿using System;
-
-class MainClass
-{
-	public static void Main(string[] args)
-	{
-		Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-
-		var color = Console.ReadLine();
-
-		if (color == "red")
-		{
-			Console.BackgroundColor = ConsoleColor.Red;
-			Console.ForegroundColor = ConsoleColor.Black;
-
-			Console.WriteLine("Your color is red!");
-		}
-
-		else if (color == "green")
-		{
-			Console.BackgroundColor = ConsoleColor.Green;
-			Console.ForegroundColor = ConsoleColor.Black;
-
-			Console.WriteLine("Your color is green!");
-		}
-		else
-		{
-			Console.BackgroundColor = ConsoleColor.Cyan;
-			Console.ForegroundColor = ConsoleColor.Black;
-
-			Console.WriteLine("Your color is cyan!");
-		}
-	}
-}
+﻿//4.4.5
+(string Name, string Type, double Age, int NameCount) Pet;
+Pet.NameCount = 0;
+Console.WriteLine("Enter Name");
+Pet.Name = Console.ReadLine();
+Console.WriteLine("Enter Type");
+Pet.Type = Console.ReadLine();
+Console.WriteLine("Enter Age");
+Pet.Age = Convert.ToDouble(Console.ReadLine());
+Pet.NameCount ++;
+Console.WriteLine("NameCount: " + Pet.NameCount);
+Console.WriteLine("Name: " + Pet.Name);
+Console.WriteLine("Type: " + Pet.Type);
+Console.WriteLine("Age: " + Pet.Age);
+Console.ReadKey();
